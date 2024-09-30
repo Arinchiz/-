@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация на работу</title>
+</head>
+<body>
+
+    <h1>Форма регистрации на работу</h1>
+    
+    <form action="submit_application.php" method="post">
+
+        <fieldset>
+            <legend>Личные данные</legend>
+            
+            <label for="first_name">Имя:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <br><br>
+
+            <label for="last_name">Фамилия:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <br><br>
+
+            <label for="birthdate">Дата рождения:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            <br><br>
+
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <small>Формат: 123-456-7890</small>
+            <br><br>
+        </fieldset>
+
+ 
+        <fieldset>
+            <legend>Опыт работы</legend>
+            
+            <label for="last_job">Последнее место работы:</label>
+            <input type="text" id="last_job" name="last_job">
+            <br><br>
+
+            <label for="job_experience">Опыт работы (в годах):</label>
+            <input type="number" id="job_experience" name="job_experience" min="0" max="50">
+            <br><br>
+
+            <label for="job_position">Желаемая должность:</label>
+            <input type="text" id="job_position" name="job_position" required>
+            <br><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Навыки</legend>
+
+            <p>Выберите ваши ключевые навыки:</p>
+            
+            <label for="skill1">
+                <input type="checkbox" id="skill1" name="skills" value="Коммуникабельность"> Коммуникабельность
+            </label>
+            <br>
+            <label for="skill2">
+                <input type="checkbox" id="skill2" name="skills" value="Работа в команде"> Работа в команде
+            </label>
+            <br>
+            <label for="skill3">
+                <input type="checkbox" id="skill3" name="skills" value="Организация"> Организация
+            </label>
+            <br>
+            <label for="skill4">
+                <input type="checkbox" id="skill4" name="skills" value="Технические навыки"> Технические навыки
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Дополнительная информация</legend>
+
+            <label for="employment_type">Тип занятости:</label>
+            <br>
+            <label for="employment_fulltime">
+                <input type="radio" id="employment_fulltime" name="employment_type" value="Полная занятость" required> Полная занятость
+            </label>
+            <br>
+            <label for="employment_parttime">
+                <input type="radio" id="employment_parttime" name="employment_type" value="Частичная занятость"> Частичная занятость
+            </label>
+            <br>
+            <label for="employment_remote">
+                <input type="radio" id="employment_remote" name="employment_type" value="Удаленная работа"> Удаленная работа
+            </label>
+            <br><br>
+
+            <label for="resume_upload">Загрузите резюме:</label>
+            <input type="file" id="resume_upload" name="resume_upload" accept=".pdf, .doc, .docx" required>
+        </fieldset>
+
+
+        <input type="submit" value="Отправить заявку">
+        <input type="reset" value="Очистить форму">
+    </form>
+
+</body>
+</html>

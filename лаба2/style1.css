@@ -1,0 +1,55 @@
+img{
+   width: 300px;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 15px;
+}
+TD#leftcol{
+   padding-right: 20px;
+}
+body{
+   background-color: beige;
+   margin: 0;
+   padding: 0;
+}
+.container {
+   width: 1440px;
+   margin: 0 auto; 
+}
+ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+ul li a {
+   color: black; 
+   text-decoration: none; 
+}
+.p1{
+   text-align: center;
+   font-family: Anticva, sans-serif;
+}
+.p2{
+   text-align: left;
+   font-family: Roarium, sans-serif;
+}
+.p3{
+   text-align: right;
+   font-family: Balkara, sans-serif;
+}
+.bold{
+  font-weight: bold;
+
+}
+@font-face {
+   font-family: Anticva;
+   src: url("ofont.ru_Anticva.ttf");
+}
+@font-face {
+   font-family: Rosarium;
+   src: url("ofont.ru_Rosarium.ttf");
+}
+@font-face {
+   font-family: Balkara;
+   src: url("ofont.ru_Manrope.ttf");
+}
